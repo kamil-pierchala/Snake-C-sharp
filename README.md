@@ -10,7 +10,7 @@ Prosta gra zręcznościowa **Snake** zaimplementowana w języku C# (Aplikacja Ko
 * Wykrywanie kolizji ze ścianami oraz własnym ogonem.
 * System punktacji wyświetlany w czasie rzeczywistym.
 
-## Naprawione błędy )
+## Naprawione błędy
 W ramach projektu przeprowadzono szereg poprawek błędów składniowych i logicznych:
 1. **Obstakel.cs**: Dodano brakującą współrzędną `Ypos` niezbędną do pozycjonowania przeszkód.
 2. **Snake.cs**: 
