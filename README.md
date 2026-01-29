@@ -14,10 +14,10 @@ Prosta gra zręcznościowa **Snake** zaimplementowana w języku C# (Aplikacja Ko
 
 Gra obsługuje sterowanie kierunkowe w czasie rzeczywistym. Użyj klawiszy strzałek, aby nawigować wężem po planszy:
 Klawisz -> Akcja
-⬆️ Strzałka w górę -> Ruch w górę
-⬇️ Strzałka w dół	-> Ruch w dół
-⬅️ Strzałka w lewo -> Ruch w lewo
-➡️ Strzałka w prawo -> Ruch w prawo
+* ⬆️ **Strzałka w górę** -> Ruch w górę
+* ⬇️ **Strzałka w dół** -> Ruch w dół
+* ⬅️ **Strzałka w lewo** -> Ruch w lewo
+* ➡️ **Strzałka w prawo** -> Ruch w prawo
 
 Uwaga: Gra kończy się w momencie uderzenia w ramkę planszy (białe kwadraty) lub zjedzenia własnego ogona!
 
