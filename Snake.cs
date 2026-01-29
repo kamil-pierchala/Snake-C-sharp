@@ -23,8 +23,6 @@ class Program
 
         string movement = "RIGHT";
 
-        List<int> telje = new List<int>();
-
         int score = 0;
 
         Pixel hoofd = new Pixel();
@@ -129,11 +127,11 @@ class Program
 
             Console.Write("H");
 
-            for (int i = 0; i < telje.Count(); i++)
+            for (int i = 0; i < teljePositie.Count(); i += 2)
 
             {
 
-                Console.SetCursorPosition(telje[i], telje[i + 1]);
+                Console.SetCursorPosition(teljePositie[i], teljePositie[i + 1]);
 
                 Console.Write("■");
 
@@ -255,11 +253,11 @@ class Program
 
             }
 
-            for (int i = 0; i < telje.Count(); i += 2)
+            for (int i = 0; i < teljePositie.Count(); i += 2)
 
             {
 
-                if (hoofd.xPos == telje[i] && hoofd.yPos == telje[i + 1])
+                if (hoofd.xPos == teljePositie[i] && hoofd.yPos == teljePositie[i + 1])
 
                 {
 
