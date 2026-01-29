@@ -25,6 +25,8 @@ class Program
 
         int score = 0;
 
+        bool grow = false;
+
         Pixel hoofd = new Pixel();
 
         hoofd.xPos = screenwidth / 2;
@@ -208,26 +210,26 @@ class Program
                 hoofd.xPos++;
 
             //Hindernis treffen
-
             if (hoofd.xPos == obstacleXpos && hoofd.yPos == obstacleYpos)
-
             {
-
                 score++;
-
-                obstacleXpos = randomnummer.Next(1, screenwidth);
-
-                obstacleYpos = randomnummer.Next(1, screenheight);
-
+                grow = true;
+                obstacleXpos = randomnummer.Next(1, screenwidth - 1);
+                obstacleYpos = randomnummer.Next(1, screenheight - 1);
             }
 
             teljePositie.Insert(0, hoofd.xPos);
-
             teljePositie.Insert(1, hoofd.yPos);
 
-            teljePositie.RemoveAt(teljePositie.Count - 1);
-
-            teljePositie.RemoveAt(teljePositie.Count - 1);
+            if (!grow)
+            {
+                teljePositie.RemoveAt(teljePositie.Count - 1);
+                teljePositie.RemoveAt(teljePositie.Count - 1);
+            }
+            else
+            {
+                grow = false;
+            }
 
             //Kollision mit Wände oder mit sich selbst
 
