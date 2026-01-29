@@ -10,6 +10,17 @@ Prosta gra zręcznościowa **Snake** zaimplementowana w języku C# (Aplikacja Ko
 * Wykrywanie kolizji ze ścianami oraz własnym ogonem.
 * System punktacji wyświetlany w czasie rzeczywistym.
 
+## Instrukcja sterowania
+
+Gra obsługuje sterowanie kierunkowe w czasie rzeczywistym. Użyj klawiszy strzałek, aby nawigować wężem po planszy:
+Klawisz -> Akcja
+⬆️ Strzałka w górę -> Ruch w górę
+⬇️ Strzałka w dół	-> Ruch w dół
+⬅️ Strzałka w lewo -> Ruch w lewo
+➡️ Strzałka w prawo -> Ruch w prawo
+
+Uwaga: Gra kończy się w momencie uderzenia w ramkę planszy (białe kwadraty) lub zjedzenia własnego ogona!
+
 ## Naprawione błędy
 W ramach projektu przeprowadzono szereg poprawek błędów składniowych i logicznych:
 1. **Obstakel.cs**: Dodano brakującą współrzędną `Ypos` niezbędną do pozycjonowania przeszkód.
