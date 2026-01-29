@@ -253,7 +253,7 @@ class Program
 
             }
 
-            for (int i = 0; i < teljePositie.Count(); i += 2)
+            for (int i = 2; i < teljePositie.Count(); i += 2)
 
             {
 
